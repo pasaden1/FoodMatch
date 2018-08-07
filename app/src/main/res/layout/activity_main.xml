@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shape_color"
+    android:orientation="vertical"
+    tools:context="com.botevplovdiv.foodmatch.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ic_sentiment_dissatisfied_black_256dp"
+            android:contentDescription="" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/empty_stack" />
+
+        <GridLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:columnCount="5"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/undoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_row="0"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:scaleType="center"
+                app:backgroundTint="@color/background"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/return_card_24dp" />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/rejectButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_row="0"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:scaleType="center"
+                app:backgroundTint="@color/Red_fab"
+                app:fabSize="normal"
+                app:srcCompat="@drawable/ic_close_black_36dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/infoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_row="0"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:scaleType="center"
+                app:backgroundTint="@color/background"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_information1" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/acceptButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_row="0"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:scaleType="center"
+                app:backgroundTint="@color/Green_fab"
+                app:fabSize="normal"
+                app:srcCompat="@drawable/ic_check_black_36dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/favButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_row="0"
+                android:clickable="true"
+                android:scaleType="center"
+                app:backgroundTint="@color/background"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/favorites_24dp" />
+        </GridLayout>
+
+        <com.lorentzos.flingswipe.SwipeFlingAdapterView
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:rotation_degrees="15.5"
+            tools:context=".MyActivity" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorSecondary">#d4e157</color>
+    <color name="colorSecondaryDark">#a0af22</color>
+    <color name="colorSecondaryLight">#cddc39</color>
+    <color name="colorAccent">#a0af22</color>
+    <color name="background">#f1f1f2</color>
+    <color name="colorPrimary">#4db6ac</color>
+    <color name="colorPrimaryDark">#00867d</color>
+    <color name="colorPrimaryLight">#82e9de</color>
+
+    <!-- Additional colors-->
+    <color name="olive">#3c3940</color>
+    <color name="Fab_button_bag_color">#c6c6c7</color>
+    <color name="Green_fab">#afb42b</color>
+    <color name ="Red_fab">#ab000d</color>
+    <color name="order_button">#dce775</color>
+    <color name="card_border_color">#b0bec5</color>
+    <color name="shape_color">#eceff1</color>
+    <color name="transparent_olive">#643c3940</color>
+    <color name="light_blue_color">#b2dfdb</color>.
+    <color name="fav_button_color">#fdd835</color>
+    <color name="colorSecondaryLightTransparent">#64cddc39</color>
+
+</resources>

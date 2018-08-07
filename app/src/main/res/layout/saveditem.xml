@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/priceText"
+        app:srcCompat="@drawable/flatdivider2" />
+
+    <ImageView
+        android:id="@+id/foodImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/foodTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/price_tag_padding"
+        android:layout_marginTop="@dimen/price_tag_padding"
+        android:layout_toEndOf="@+id/foodImage"
+        android:ellipsize="end"
+        android:hint="@string/TitleText"
+        android:maxLines="1"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/venueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodTitleText"
+        android:layout_marginBottom="@dimen/price_tag_padding"
+        android:layout_marginStart="@dimen/price_tag_padding"
+        android:layout_marginTop="@dimen/Spacing"
+        android:layout_toRightOf="@+id/foodImage"
+        android:hint="@string/venues_categories"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/priceTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/venueText"
+        android:layout_toRightOf="@+id/foodImage"
+        android:text="@string/priceText"
+        android:background="@color/colorSecondary"
+        android:layout_alignBottom="@+id/foodImage"
+        android:paddingEnd="@dimen/price_tag_padding"
+        android:paddingStart="@dimen/price_tag_padding"
+        android:textSize="@dimen/Medium_Text"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/foodImage"
+        android:layout_below="@+id/venueText"
+        android:layout_toRightOf="@+id/priceTag"
+        android:background="@color/colorSecondary"
+        android:gravity="center_vertical|end"
+        android:hint="@string/actual_price"
+        android:paddingEnd="@dimen/price_tag_padding"
+        android:paddingStart="@dimen/price_tag_padding"
+        android:textSize="@dimen/Medium_Text" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priceText"
+        app:srcCompat="@drawable/flatdivider2" />
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:layout_marginEnd="@dimen/activity_vertical_margin"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/cardMainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/shape2"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/shape1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/shape"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/cardImage"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginEnd="@dimen/border_margin"
+                android:layout_marginStart="@dimen/border_margin"
+                android:layout_marginTop="@dimen/border_margin"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius_top_left="10dip"
+                app:riv_corner_radius_top_right="10dip"
+                app:riv_oval="false" />
+
+
+            <ImageView
+                android:id="@+id/bodyView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/priceText"
+                android:layout_below="@+id/cardImage"
+                android:layout_marginEnd="@dimen/border_margin"
+                android:layout_marginStart="@dimen/border_margin"
+                android:background="@drawable/pattern" />
+
+            <ImageView
+                android:id="@+id/infoSecondDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardImage"
+                android:adjustViewBounds="false"
+                app:srcCompat="@drawable/flatdivider2" />
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infoSecondDivider"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingEnd="@dimen/price_tag_padding"
+                android:paddingStart="@dimen/price_tag_padding"
+                android:textSize="@dimen/title_Text" />
+
+            <TextView
+                android:id="@+id/categoryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleText"
+                android:layout_marginBottom="@dimen/price_tag_padding"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/price_tag_padding"
+                android:paddingStart="@dimen/price_tag_padding" />
+
+            <ImageView
+                android:id="@+id/secondDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/categoryText"
+                android:adjustViewBounds="false"
+                app:srcCompat="@drawable/flatdivider2" />
+
+
+            <TextView
+                android:id="@+id/shortDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/priceText"
+                android:layout_below="@id/secondDivider"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingEnd="@dimen/price_tag_padding"
+                android:paddingStart="@dimen/price_tag_padding" />
+
+            <ImageView
+                android:id="@+id/bottomDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shortDescription"
+                android:adjustViewBounds="false"
+                app:srcCompat="@drawable/flatdivider2" />
+
+            <TextView
+                android:id="@+id/priceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:padding="@dimen/price_tag_padding"
+                android:text="@string/priceText"
+                android:textSize="@dimen/Price_tag_size" />
+
+
+            <TextView
+                android:id="@+id/priceTagText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="false"
+                android:layout_toEndOf="@+id/priceText"
+                android:gravity="end"
+                android:padding="@dimen/price_tag_padding"
+                android:textSize="@dimen/Price_tag_size" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/item_swipe_left_indicator"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:alpha="0"
+            android:background="@drawable/nopesign" />
+
+        <View
+            android:id="@+id/item_swipe_right_indicator"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:alpha="0"
+            android:background="@drawable/likesign" />
+
+    </FrameLayout>
+
+</LinearLayout>
+

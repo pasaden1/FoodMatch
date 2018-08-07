@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:selectable="true"
+        android:title="@string/food_categories_name">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="fishSwitch"
+            android:title="Fish" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="meatSwitch"
+            android:title="Meat" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="vegSwitch"
+            android:title="Vegeterian" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pizzaSwitch"
+            android:title="Pizza" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pastaSwitch"
+            android:title="Pasta" />
+    </PreferenceCategory>
+
+    <ListPreference
+        android:defaultValue="@array/area_list"
+        android:entries="@array/area_list"
+        android:entryValues="@array/area_list"
+        android:key="list_preference_1"
+        android:title="@string/areas" />
+    <PreferenceCategory android:title="@string/venues_categories">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="restaurantSwitch"
+            android:title="Restaurants" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="takeAwaySwitch"
+            android:title="Take Away" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

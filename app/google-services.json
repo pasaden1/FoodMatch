@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "991955432812",
+    "firebase_url": "https://foodmatch-99837.firebaseio.com",
+    "project_id": "foodmatch-99837",
+    "storage_bucket": "foodmatch-99837.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991955432812:android:f2f6933a9cba5630",
+        "android_client_info": {
+          "package_name": "com.botevplovdiv.foodmatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991955432812-0eueikc0r0sr50ndn7sf2mm49oklp5r2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.botevplovdiv.foodmatch",
+            "certificate_hash": "023fbfdd75afd6977f61d386afde07fa1252260d"
+          }
+        },
+        {
+          "client_id": "991955432812-f396bei2hlosn845m4s7of44l60onqle.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-XbhHpbODIk9a8MpjP11qgeFpXZXncTo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991955432812-f396bei2hlosn845m4s7of44l60onqle.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

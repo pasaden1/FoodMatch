@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.botevplovdiv.foodmatch.LikedProduct"
+    tools:showIn="@layout/activity_liked_product">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/likedImagePic"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/card_top_margin"
+            android:layout_marginStart="@dimen/card_top_margin"
+            android:layout_marginTop="@dimen/card_top_margin"
+            android:scaleType="centerCrop"
+            app:riv_border_color="@color/order_button"
+            app:riv_border_width="@dimen/thick_Stroke"
+            app:riv_corner_radius="30dip"
+            app:riv_oval="true" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/likedImagePicSmall"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/card_top_margin"
+            android:layout_marginStart="@dimen/card_top_margin"
+            android:layout_marginTop="@dimen/card_top_margin"
+            android:scaleType="centerCrop"
+            app:riv_border_color="@color/order_button"
+            app:riv_border_width="@dimen/thick_Stroke"
+            app:riv_corner_radius="30dip"
+            app:riv_oval="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/card_top_margin"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/view_similar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/strokebuttonshape"
+            android:elevation="0dp"
+            android:text="@string/view_similar"
+            android:textColor="@color/light_blue_color" />
+
+        <Button
+            android:id="@+id/save_for_later"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_similar"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/light_blue_color"
+            android:text="@string/save_for_later"
+            android:textColor="@color/olive" />
+
+        <Button
+            android:id="@+id/order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/order_button"
+            android:elevation="2dp"
+            android:text="@string/order_button_name"
+            android:textColor="@color/olive" />
+    </RelativeLayout>
+
+</LinearLayout>

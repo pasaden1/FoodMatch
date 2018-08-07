@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.botevplovdiv.foodmatch.OrderActivity"
+    tools:showIn="@layout/activity_order"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="4dp">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ticks" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/venueImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/c700x420" />
+
+                <ImageView
+                    android:id="@+id/infoSecondDivider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/venueImage"
+                    app:srcCompat="@drawable/flatdivider2" />
+
+                <TextView
+                    android:id="@+id/venueName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/infoSecondDivider"
+                    android:layout_marginTop="@dimen/Spacing"
+                    android:padding="@dimen/Spacing"
+                    android:textSize="@dimen/Medium_Text" />
+
+                <TextView
+                    android:id="@+id/venueCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/venueName"
+                    android:padding="@dimen/Spacing" />
+
+                <ImageView
+                    android:id="@+id/secondDivider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/venueCategory"
+                    app:srcCompat="@drawable/flatdivider2" />
+
+                <LinearLayout
+                    android:id="@+id/addressLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/secondDivider"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/venuAddress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/Spacing"
+                        android:layout_marginTop="@dimen/Spacing"
+                        android:layout_weight="1"
+                        android:padding="@dimen/Spacing" />
+
+                    <ImageButton
+                        android:id="@+id/mapButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/View_on_map"
+                        android:layout_margin="@dimen/price_tag_padding"
+                        android:background="#00000000"
+                        app:srcCompat="@drawable/location_icon_36dp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/thirdDivider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressLayout"
+                    app:srcCompat="@drawable/flatdivider2" />
+
+                <LinearLayout
+                    android:id="@+id/phoneLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/thirdDivider"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/phoneNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/Spacing"
+                        android:layout_weight="1"
+                        android:padding="@dimen/Spacing" />
+
+                    <ImageButton
+                        android:id="@+id/phoneButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/price_tag_padding"
+                        android:background="#00000000"
+                        app:srcCompat="@drawable/ic_call_black_36dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/forthDivider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phoneLayout"
+                    app:srcCompat="@drawable/flatdivider2" />
+
+                <LinearLayout
+                    android:id="@+id/calculationLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/forthDivider">
+
+                    <TextView
+                        android:id="@+id/foodItemTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/price_tag_padding"
+                        android:layout_weight="1"
+                        android:padding="@dimen/Spacing" />
+
+
+                    <ImageButton
+                        android:id="@+id/decreseArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="#00000000"
+                        app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/quantityText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/price_tag_padding"
+                        android:padding="@dimen/Spacing" />
+
+                    <ImageButton
+                        android:id="@+id/increseArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="#00000000"
+                        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/totalPriceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/calculationLayout"
+                    android:layout_marginTop="@dimen/card_side_margin"
+                    android:padding="@dimen/Spacing"
+                    android:text="@string/Total_Price"
+                    android:textSize="@dimen/Medium_Text" />
+
+                <TextView
+                    android:id="@+id/calculatedTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/calculationLayout"
+                    android:layout_marginTop="@dimen/card_side_margin"
+                    android:layout_toEndOf="@+id/totalPriceText"
+                    android:gravity="end"
+                    android:padding="@dimen/Spacing"
+                    android:textColor="@color/colorSecondaryDark"
+                    android:textSize="@dimen/Medium_Text" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/detailsCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_side_margin"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/pattern1"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/detailsLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/toproundshape"
+                    android:paddingBottom="@dimen/price_tag_padding"
+                    android:paddingEnd="@dimen/Spacing"
+                    android:paddingStart="@dimen/Spacing"
+                    android:paddingTop="@dimen/price_tag_padding"
+                    android:text="@string/personalDetailsLabel"
+                    android:textSize="@dimen/Price_tag_size" />
+
+                <TextView
+                    android:id="@+id/NameText"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detailsLabel"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:padding="@dimen/Spacing"
+                    android:text="@string/Name"
+                    android:textSize="@dimen/Medium_Text" />
+
+
+                <TextView
+                    android:id="@+id/AddressText"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/NameText"
+                    android:layout_marginTop="@dimen/price_tag_padding"
+                    android:padding="@dimen/Spacing"
+                    android:text="@string/address"
+                    android:textSize="@dimen/Medium_Text" />
+
+                <EditText
+                    android:id="@+id/editTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detailsLabel"
+                    android:layout_marginEnd="@dimen/Spacing"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:layout_toEndOf="@+id/NameText"
+                    android:background="@drawable/edittextshape"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:labelFor="@id/editTextName"
+                    android:padding="@dimen/Spacing"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/Medium_Text" />
+
+                <TextView
+                    android:id="@+id/phoneNumberText"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/AddressText"
+                    android:layout_marginTop="@dimen/price_tag_padding"
+                    android:padding="@dimen/Spacing"
+                    android:text="@string/phone_number"
+                    android:textSize="@dimen/Medium_Text" />
+
+
+                <EditText
+                    android:id="@+id/editTextAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextName"
+                    android:layout_marginEnd="@dimen/Spacing"
+                    android:layout_marginTop="@dimen/price_tag_padding"
+                    android:layout_toEndOf="@+id/AddressText"
+                    android:background="@drawable/edittextshape"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:labelFor="@id/editTextAddress"
+                    android:padding="@dimen/Spacing"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/Medium_Text" />
+
+                <EditText
+                    android:id="@+id/editTextPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextAddress"
+                    android:layout_marginEnd="@dimen/Spacing"
+                    android:layout_marginTop="@dimen/price_tag_padding"
+                    android:layout_toEndOf="@+id/phoneNumberText"
+                    android:background="@drawable/edittextshape"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:labelFor="@id/editTextPhone"
+                    android:padding="@dimen/Spacing"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/Medium_Text" />
+
+                <Button
+                    android:id="@+id/placeOrderButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/editTextPhone"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:background="@drawable/orderbuttonshape2"
+                    android:text="@string/placeOrder" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
